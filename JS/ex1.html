@@ -1,0 +1,45 @@
+<html>
+<head>
+<title> Java Script Example
+</title>
+</head>
+<body>
+
+<div>
+<label>Username : </label>
+<input type="text" name="username" id="username">
+<br>
+<br>
+<label>Password : </label>
+<input type="text" name="password" id="password">
+<br>
+<button type="button" onclick="displaydata()">Submit</button>
+</div>
+   
+
+<script>
+
+function displaydata()
+{
+   console.log("hi");
+   var a=document.getElementById(username).value;
+   var b=document.getElementById(password).value;
+
+   if((a !== '') && (b !== '')) 
+	{
+		document.getElementById("username").innerHTML = a;
+		document.getElementById("password").innerHTML = b;
+	}
+       else
+        {
+         alert("no Values");
+	}
+
+ 
+}
+
+
+</script>
+
+</body>
+</html>
